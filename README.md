@@ -33,7 +33,7 @@ Screenshot of active states
 ### Links
 
 - Solution URL: [https://github.com/akshaypatel99/frontend-mentor/tree/main/interactive-rating-component](https://github.com/akshaypatel99/frontend-mentor/tree/main/interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://akshaypatel99.github.io/interactive-rating-component/](https://akshaypatel99.github.io/interactive-rating-component/)
 
 ## My process
 
