@@ -64,13 +64,11 @@ Adding a fade animation on the rating and thank you cards:
 ```
 
 ```js
-...
   ratingCard.classList.add('fade-out');
 	setTimeout(() => {
 		thanksCard.classList.add('fade-in');
 		selection.innerHTML = `You selected ${ratingValue} out of 5`;
 	}, 1000);
-...
 ```
 
 ## Author
