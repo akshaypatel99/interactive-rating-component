@@ -9,14 +9,12 @@
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
+			href="./images/favicon-32x32.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;700&display=swap"
-			rel="stylesheet"
-		/>
+			rel="stylesheet" />
 		<link rel="stylesheet" href="./styles.css" />
 		<title>Frontend Mentor | Interactive rating component</title>
 
@@ -33,88 +31,46 @@
 	</head>
 	<body>
 		<main>
-			<article class="card star-rating">
-				<div class="star-rating__wrapper">
-					<div class="star-rating__icon">
-						<img src="./images/icon-star.svg" alt="star icon" />
-					</div>
-					<div class="star-rating__title title">
-						<h1>How did we do?</h1>
-					</div>
-					<div class="star-rating__description">
-						<p>
-							Please let us know how we did with your support request. All
-							feedback is appreciated to help us improve our offering!
-						</p>
-					</div>
+			<article class="card star-rating" data-visible="true">
+				<div class="star-rating__icon">
+					<img src="./images/icon-star.svg" alt="star icon" />
+				</div>
+				<h1 class="star-rating__title title">How did we do?</h1>
+				<p>
+					Please let us know how we did with your support request. All feedback
+					is appreciated to help us improve our offering!
+				</p>
 
-					<div class="sr-only">Please select your rating.</div>
+				<form>
+					<div class="visually-hidden">Please select your rating.</div>
 					<div class="star-rating__input">
-						<input
-							type="radio"
-							name="rating"
-							id="rating-1"
-							value="1"
-							aria-label="1"
-						/>
+						<input type="radio" name="rating" id="rating-1" value="1" />
 						<label for="rating-1" class="number-circle">1</label>
-						<input
-							type="radio"
-							name="rating"
-							id="rating-2"
-							value="2"
-							aria-label="2"
-						/>
+						<input type="radio" name="rating" id="rating-2" value="2" />
 						<label for="rating-2" class="number-circle">2</label>
-						<input
-							type="radio"
-							name="rating"
-							id="rating-3"
-							value="3"
-							aria-label="3"
-						/>
+						<input type="radio" name="rating" id="rating-3" value="3" />
 						<label for="rating-3" class="number-circle">3</label>
-						<input
-							type="radio"
-							name="rating"
-							id="rating-4"
-							value="4"
-							aria-label="4"
-						/>
+						<input type="radio" name="rating" id="rating-4" value="4" />
 						<label for="rating-4" class="number-circle">4</label>
-						<input
-							type="radio"
-							name="rating"
-							id="rating-5"
-							value="5"
-							aria-label="5"
-						/>
+						<input type="radio" name="rating" id="rating-5" value="5" />
 						<label for="rating-5" class="number-circle">5</label>
 					</div>
-					<form>
-						<button type="submit" class="submit-rating">Submit</button>
-					</form>
-				</div>
+
+					<button type="submit" class="submit-rating">Submit</button>
+				</form>
 			</article>
-			<article class="card thanks" hidden>
-				<div class="thanks__wrapper">
-					<div class="thanks__image">
-						<img
-							src="./images/illustration-thank-you.svg"
-							alt="Submission illustration"
-						/>
-					</div>
-					<div class="thanks__selection">You selected * out of 5</div>
-					<div class="thanks__title title">
-						<h1>Thank you!</h1>
-					</div>
-					<div class="thanks__description">
-						<p>
-							We appreciate you taking the time to give a rating. If you ever
-							need more support, don’t hesitate to get in touch!
-						</p>
-					</div>
+			<article class="card thanks" data-visible="false">
+				<div class="thanks__image">
+					<img
+						src="./images/illustration-thank-you.svg"
+						alt="Submission illustration" />
 				</div>
+				<div class="thanks__selection">You selected * out of 5</div>
+				<h1 class="thanks__title title">Thank you!</h1>
+				<p>
+					We appreciate you taking the time to give a rating. If you ever need
+					more support, don’t hesitate to get in touch!
+				</p>
 			</article>
 		</main>
 		<footer class="attribution">

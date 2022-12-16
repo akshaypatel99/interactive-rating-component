@@ -13,8 +13,11 @@ btn.onclick = (e) => {
 
 	ratingCard.classList.add('fade-out');
 	setTimeout(() => {
+		ratingCard.setAttribute('data-visible', false);
+	}, 1000);
+	setTimeout(() => {
 		thanksCard.classList.add('fade-in');
-		thanksCard.removeAttribute('hidden');
+		thanksCard.setAttribute('data-visible', true);
 		selection.innerHTML = `You selected ${ratingValue} out of 5`;
 	}, 1000);
 };
