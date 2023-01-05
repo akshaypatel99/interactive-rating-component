@@ -32,7 +32,7 @@ Screenshot of active states
 
 ### Links
 
-- Solution URL: [https://github.com/akshaypatel99/frontend-mentor/tree/main/interactive-rating-component](https://github.com/akshaypatel99/frontend-mentor/tree/main/interactive-rating-component)
+- Solution URL: [https://github.com/akshaypatel99/interactive-rating-component](https://github.com/akshaypatel99/interactive-rating-component)
 - Live Site URL: [https://akshaypatel99.github.io/interactive-rating-component/](https://akshaypatel99.github.io/interactive-rating-component/)
 
 ## My process
@@ -64,11 +64,11 @@ Adding a fade animation on the rating and thank you cards:
 ```
 
 ```js
-  ratingCard.classList.add('fade-out');
-	setTimeout(() => {
-		thanksCard.classList.add('fade-in');
-		selection.innerHTML = `You selected ${ratingValue} out of 5`;
-	}, 1000);
+ratingCard.classList.add('fade-out');
+setTimeout(() => {
+	thanksCard.classList.add('fade-in');
+	selection.innerHTML = `You selected ${ratingValue} out of 5`;
+}, 1000);
 ```
 
 ## Author
